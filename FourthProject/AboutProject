@@ -1,0 +1,4 @@
+in this project we used @component annotation on model 
+@componentscan(basePackages = "fqcn")
+
+and if we run this we will get output as null bcoz we havent set any value 
