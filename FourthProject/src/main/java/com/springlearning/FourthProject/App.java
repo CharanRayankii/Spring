@@ -9,8 +9,11 @@ public class App
 {
     public static void main( String[] args )
     {
-        AnnotationConfigApplicationContext con = new AnnotationConfigApplicationContext(AppConfig.class);
-        Vehicle veh = con.getBean(Vehicle.class);
-        System.out.println(veh.getName());
+    	   var context = new AnnotationConfigApplicationContext
+                   (AppConfig.class);
+     Vehicle vehicle = context.getBean(Vehicle.class);
+     System.out.println("Component Vehicle name from " +
+             "Spring Context is: " + vehicle.getName());
+     vehicle.printHello();
     }
 }
