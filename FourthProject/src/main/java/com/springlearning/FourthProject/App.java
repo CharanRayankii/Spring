@@ -15,5 +15,6 @@ public class App
      System.out.println("Component Vehicle name from " +
              "Spring Context is: " + vehicle.getName());
      vehicle.printHello();
+     context.close();
     }
 }
