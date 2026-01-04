@@ -15,5 +15,7 @@ public class App
         Vehicle veh = contect.getBean(Vehicle.class);
         veh.setName("audi");
         System.out.println(veh.getName());
+        
+        contect.close();
     }
 }
