@@ -10,7 +10,7 @@ public class App
     public static void main( String[] args )
     {
         AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(ProjectConfig.class);
-        Vehicle veh = context.getBean(Vehicle.class);
+        Vehicle veh = context.getBean("vehicle2",Vehicle.class);
         System.out.println(veh.getName());
     }
 }
