@@ -16,10 +16,9 @@ public class App
         ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
         
         Vehicle veh = (Vehicle)context.getBean("vehicle");
-        veh.setName("Audi - 8");
+        //veh.setName("Audi - 8");
         System.out.println(veh.getName());
         
-        Vehicle veh1 = (Vehicle)context.getBean("vehicle");
-        System.out.println(veh.getName());
+       
     }
 }

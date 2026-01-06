@@ -4,6 +4,7 @@
     xsi:schemaLocation="
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-   <bean id="vehicle" class="com.Rc.example6.beans.Vehicle" scope="prototype"></bean>
+   <bean id="vehicle" class="com.Rc.example6.beans.Vehicle">
+   <property name="name" value="Benz"></property></bean>
 
 </beans>
