@@ -5,6 +5,9 @@
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
    <bean id="vehicle" class="com.Rc.example6.beans.Vehicle">
-   <property name="name" value="Benz"></property></bean>
+   <property name="name" value="Benz"></property>
+   <property name="tyres" ref="tyres"></property></bean>
+   <bean id="tyres" class="com.Rc.example6.beans.Tyres">
+   <property name="companyName" value="conti"></property></bean>
 
 </beans>
